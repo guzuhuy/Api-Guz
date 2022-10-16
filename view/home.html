@@ -1,64 +1,114 @@
 <!DOCTYPE html>
 <html>
-  
+<meta charset='UTF-8'/>
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'/><link href="https://drive.google.com/uc?export=view&id=13iETBw-nS1hNeBcWUbkRyc69WByi_IpO" rel="stylesheet" type="text/css" />
+
 <head>
-	<title>GuzStore</title>
-	<script src="https://kit.fontawesome.com/5367cb78eb.js" crossorigin="anonymous"></script>
-<link rel="icon" type="image/x-icon" href="https://lh6.googleusercontent.com/proxy/E-jATipSPFRJh8o0W_usPRUKd99CtM6AgSp8_MDKuuNMqnVugDQXbX4eK1--Jj1yN3WDA3DSOJu18lR2tnKDz1FK3qG59mEn=s0-d">
-	<meta charset="utf-8">
+<title>Welcome GuzStore</title>
+
 	<meta name="keywords" content="GuzUhuy">
-	<meta name="description" content="Top Up Game Termurah">
+<meta name="description" content="Top Up Game Termurah Hanya Di GuzStore">
+<meta property="og:image" content="https://i.ibb.co/ZgmQ6Rq/icon.jpg"/>
+<!-- 
+  
+  Made with love by Rayys!
+  
+     Blog: https://PalingIT.com
+     Instagram: @rayyarrr
+     TikTok: @rayy4r
+     Email: rayyar0703@gmail.com
+     
+  Thanks to all <3
+  
+-->
 	 <style type="text/css">
 
  .masuke{
 
- background:transparent; 	border:2px solid silver; 	font-family:Share Tech Mono; 	color:white; 	font-size:18x; 	font-weight:bold; 	padding:3px 29px; 	text-decoration:none; 	text-shadow:0px 0px 20px #15CFF4; 
+ background:transparent; 	border:2px solid silver; 	font-family:Share Tech Mono; 	color:yellow; 	font-size:20x; 	font-weight:bold; 	padding:3px 29px; 	text-decoration:none; 	text-shadow:0px 0px 20px #15CFF4; 
 
 } 
 
 </style>
-<style>
-	@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
-	body{
-		font-family: 'Acme';
-		background-color: black;
-		color: white;
-		text-align: center;
-		margin-top: 8%;
-		width: auto;
-	}
-	h1{
-		margin-top: 0%;
-		font-size: 2.8vw;
-	}
-</style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<audio autoplay>
-  <source src="images/lagu.mp3" type="audio/mpeg"/>
-</audio>
-	<img src="https://thumbs.gfycat.com/DrearyIdealisticArieltoucan.webp" width="300">
-	<h1><font size="7">Selamat Datang Di GuzStore</font></h1>
-	<i>
-	  <br>
-	<font color="red" size="4">WebSite Khusus Top Up Mobile Lejends</font><br><br><br>
-  	<font color="white" size="5">Note:<br>GuzStore merupakan website TopUp Game Termurah, tercepat, dan terpercaya untuk layanan games dan entertainment.</font>
-	<br>
-	</i>
-	    
-    
-    <div class="bottom">
-        <p>
-            <a href="https://www.tiktok.com/@alipje29" rel="noopener noreferrer" class="sosme"><i class="fa-brands fa-tiktok"></i> Tiktok</a>
-        </p>
-    </div>
-    <br><br><br>
-    <font>
-      <a class="masuke" href="https://guzstore.herokuapp.com/docs" target:="_blank" rel="noopener noreferrer" face="Rancho" size="7" color="yellow">Masuk </a></font>
+	
+   <!-- Ganti Audio di sini --><audio src="https://www.mboxdrive.com/lagu.mp3" id="linkmp3"></audio><script>audio = new Audio('' + linkmp3.src);</script>
+   
+   <div id="bodyblur">
+     <!-- Wallpaper --><img src="https://i.ibb.co/k1CWD2S/20221016-173719.jpg" id="wallpaper"/>
+   </div>
 
-    </body>
-        <style>
-@import url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&amp;display=swap);
+   <div id='Content'>
+   	
+     <div id="suratin" onClick="memulai();">
+       <!-- Tombol Surat --><img src="https://rayyscoding.github.io/envelope.png"/>
+     </div>
+     <p id="ket">Klik Pesannya!</p>
+   
+     <div>
+         <!-- Stiker untuk Konten -->
+         <img src="https://thumbs.gfycat.com/DrearyIdealisticArieltoucan.webp" id="fotoakhir"/>
+         <img src="https://thumbs.gfycat.com/DrearyIdealisticArieltoucan.webp" id="fotoakhir1"/>
+         <img src="https://thumbs.gfycat.com/DrearyIdealisticArieltoucan.webp" id="fotoakhir2"/>
+         <img src="https://thumbs.gfycat.com/DrearyIdealisticArieltoucan.webp" id="fotoakhir3"/>
+
+         <img src="https://thumbs.gfycat.com/DrearyIdealisticArieltoucan.webp" id="fotoAkhir"/>
+     </div>
+     <div><blockquote id='bq'>
+  
+       <!-- Konten Penerapan -->
+       
+       <font color="white" size="6">Selamat Datang Di GuzStore</font><br><br>
+       <font color="red" id="kalimatc"></p>WebSite Top Up Khusus Mobile Lejends</font>
+      <br> <p id="kalimatc">Note:<br>GuzStore merupakan website TopUp Game Termurah, tercepat, dan terpercaya untuk layanan games dan entertainment.</p>
+       <br><br>
+       <font>
+       <a class="masuke" href="https://guzstore.herokuapp.com/docs" target:="_blank" rel="noopener noreferrer" face="Rancho" size="7" color="yellow">Masuk </a></font>
+       <div1 class="bottom">
+        <p1>
+            <a1 href="https://www.tiktok.com/@guzuhuy" rel="noopener noreferrer" class="sosme"><i class="fa-brands fa-tiktok"></i> Tiktok</a1>
+        </p1>
+    </div>
+     </blockquote></div>
+   
+   
+     
+   </div>
+
+<!-- Jangan Edit Bagian Ini --><script>
+  const swalst = Swal.mixin({timer: 2777, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 100,}); ftom=0;jikatom=0;ftganti=0;fungsi=0;const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageWidth: 100, imageHeight: 100,}); const body = document.querySelector("body");function createHeart() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
+  function mulaikonten() {fungsi=1;suratin.style="display:none";ket.style="display:none";Content.style = "opacity:1;margin-top:4vh;";bodyblur.style="opacity:.3;animation:none";wallpaper.style="transform: scale(1);";bq.style = "position:relative;opacity:1;visibility:visible;margin-top:0;";audio.play();ftganti=0;ftmuncul();
+                          setTimeout(fmketik1,1500);setTimeout(mketik1,1500);
+                          setTimeout(fmketik2,3800);setTimeout(mketik2,3800);
+                          setTimeout(fmketik3,5200);setTimeout(mketik3,5200);
+                          setTimeout(fmketik4,7200);setTimeout(mketik4,7200);
+                         }
+
+   async function jawab(){
+           var { value: jawaban } = await swals.fire({
+               title: 'Tulis Pesan &#128073;&#128072;', input: 'text', allowOutsideClick: false, showCancelButton: false,
+           });
+           if(jawaban && jawaban.length < 19){
+           	window.jawaban = jawaban;
+               pesanwhatsapp = jawaban;
+               balasan = jawaban;
+               otomatis3();setTimeout(stakhir,1000);
+           } else {
+               await swals.fire('Ups!', 'Jawaban tidak boleh kosong atau lebih dari 18 karakter, ya!');jawab();
+           }
+       }
+   
+   async function menuju(){await swals.fire('OK!', 'Kirim pesan ke WhatsApp aku, ya!', 'success');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;Tombol.style="margin-top:15px;opacity:1;transform: scale(1);";}
+</script>
+<script src="https://feeldreams.github.io/bukahiya.js"></script>
+<!-- Sampai Sini -->
+</body>
+      <style>
 * {
     padding: 0;
     margin: 0;
@@ -71,25 +121,25 @@
 
 
 
-p {
+p1 {
     color: rgba(255, 255, 255, .8);
-    letter-spacing: .15em;
-    font-size: 15px!important;
+    letter-spacing: .20em;
+    font-size: 20px!important;
     font-weight: 600
 }
 
-a {
+a1 {
     text-decoration: none;
     color: rgba(255, 255, 255, .5)
 }
 
-a.sosmed {
+a1.sosmed {
     color: rgba(255, 255, 255, .8)
 }
 
 
 .typed-text {
-    color: #0f0
+    color: #FF0040
 }
 
 .cursor {
@@ -103,7 +153,7 @@ a.sosmed {
 
 
 
-div.bottom {
+div1.bottom {
     position: fixed;
     left: 50%;
     bottom: 50px;
