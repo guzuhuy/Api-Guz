@@ -38,4 +38,8 @@ router.get('/docs', (req, res) => {
     res.sendFile(__path + '/view/docs.html')
 })
 
+router.get('/docs', (req, res) => {
+    res.sendFile(__path + '/view/mobile-lejends.html')
+})
+
 module.exports = router
