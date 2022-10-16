@@ -39,7 +39,7 @@ router.get('/docs', (req, res) => {
 })
 
 router.get('/mobile-lejends', (req, res) => {
-    res.sendFile(__path + '/view/mobile-lejends.html')
+    res.sendFile(__path + '/view/ml.html')
 })
 
 module.exports = router
